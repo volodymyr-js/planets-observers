@@ -1,0 +1,37 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="email">Please enter your email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter email"
+        formControlName="email">
+      <div
+        class="invalid"
+        *ngIf="form.get('email').invalid && form.get('email').touched">
+        <small *ngIf="form.get('email').errors.required" id="emailHelp" class="error">This is required field. </small>
+        <small *ngIf="form.get('email').errors.email" id="emailHelp" class="error">Please enter valid email.</small>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Please enter your password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        placeholder="Password"
+        formControlName="password">
+        <div class="invalid" *ngIf="form.get('password').invalid && form.get('password').touched">
+          <small *ngIf="form.get('password').errors.required" class="error">
+            This is required field.
+          </small>
+          <small *ngIf="form.get('password').errors.minlength" class="error">
+            Length must be at least 6 symbols.
+          </small>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+  </form>
+</div>

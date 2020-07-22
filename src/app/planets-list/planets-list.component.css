@@ -1,0 +1,33 @@
+.container {
+  min-width: 600px;
+}
+
+.container h2 {
+  color: #61dafb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card ul {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.card .img {
+  height: 200px;
+  width: 200px;
+}
+
+.card, .card .card-item {
+  color: darkorange;
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  border-color: #61dafb;
+  background-color: #555;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}

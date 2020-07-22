@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="text-center mb-5">Planets</h2>
+    <div
+      class="card p-2 mt-2"
+      *ngFor="let planet of planetsList | async">
+      <ul>
+        <li class="card-item" [routerLink]="['/planet-details', planet.name]" >
+          <img class="img-thumbnail img" [src]="planet.image" [alt]="planet.system">
+          <p class="ml-5 mt-2">{{ planet.name }}</p>
+        </li>
+      </ul>
+    </div>
+</div>

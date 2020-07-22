@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card m-2 p-4" *ngIf="planetDescription">
+    <div class="row">
+      <div class="col-6">
+        <p>{{ planetDescription.name }}</p>
+        <img [src]="planetDescription.image" alt="planet" class="img-thumbnail">
+      </div>
+      <div class="col-6">
+        <p>{{ planetDescription.region }}</p>
+        <p>{{ planetDescription.system }}</p>
+        <p>{{ planetDescription.description }}</p>
+        <div>
+          <button class="btn btn-warning" routerLink="/planets-list">Back to planets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

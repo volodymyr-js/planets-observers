@@ -1,0 +1,25 @@
+.img-thumbnail {
+  min-height: 200px;
+}
+
+.card {
+  color: darkorange;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1.4px;
+  border-color: #61dafb;
+  background-color: #555;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+}
+
+.btn.btn-warning {
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
